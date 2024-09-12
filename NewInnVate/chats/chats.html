@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="chats.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Tus chats</h2>
+            <ul class="chat-list">
+                <li class="chat-item active">
+                    <img src="https://via.placeholder.com/40" alt="Abigail Lue">
+                    <span>Abigail Lue</span>
+                    <span class="message-count">10</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Alisson Acevedo">
+                    <span>Alisson Acevedo</span>
+                    <span class="message-count">2</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Débora Martínez">
+                    <span>Débora Martínez</span>
+                    <span class="message-count">6</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Fabiola Melgar">
+                    <span>Fabiola Melgar</span>
+                    <span class="message-count">8</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Oscar Alegria">
+                    <span>Oscar Alegria</span>
+                    <span class="message-count">15</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Kevin Carbajal">
+                    <span>Kevin Carbajal</span>
+                    <span class="message-count">5</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Sofía Palma">
+                    <span>Sofía Palma</span>
+                    <span class="message-count">9</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Pablo Escobar">
+                    <span>Pablo Escobar</span>
+                    <span class="message-count">78</span>
+                </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Joan Sebastian">
+                    <span>Joan Sebastian</span>
+                    <span class="message-count">7</span>
+                 </li>
+                <li class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Monica Cortez">
+                    <span>Monica Cortez</span>
+                    <span class="message-count">2</span>
+                </li>
+            </ul>
+        </aside>
+ 
+        <main class="chat-area">
+            <header class="chat-header">
+                <img src="https://via.placeholder.com/50" alt="Abigail Lue">
+                <h3>Abigail Lue</h3>
+            </header>
+ 
+            <!-- Esta sección de mensajes empieza vacía -->
+            <section class="messages">
+                <!-- Aquí aparecerán los mensajes enviados y recibidos dinámicamente -->
+            </section>
+ 
+            <footer class="chat-footer">
+                <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+                <button id="send-button">Enviar</button>
+            </footer>
+        </main>
+    </div>
+ 
+    <script src="chats.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+}
+ 
+.container {
+    display: flex;
+    min-height: 100vh; /* Mejor manejo en navegadores móviles */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.sidebar {
+    flex-basis: 25%;
+    background-color: #3a4b6d;
+    padding: 1rem;
+    color: white;
+}
+ 
+.sidebar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+ 
+.chat-list {
+    list-style: none;
+}
+ 
+.chat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.chat-item img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+ 
+.chat-item.active, .chat-item:hover {
+    background-color: #7fa3f0;
+}
+ 
+.message-count {
+    background-color: #ff4d4f;
+    border-radius: 50%;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center; /* Centra el número verticalmente */
+    justify-content: center;
+}
+ 
+.chat-area {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.chat-header img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+ 
+.chat-header h3 {
+    font-size: 1.25rem;
+}
+ 
+.messages {
+    flex: 1;
+    padding: 4rem;
+    background-color: #f4f7fc;
+    overflow-y: auto;
+}
+ 
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+ 
+.message img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+ 
+.message p {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 0.75rem;
+    max-width: 80%;
+}
+ 
+.message.sent p {
+    background-color: #d0f0c0;
+}
+ 
+.message.sent {
+    justify-content: flex-end; /* Alinea los mensajes enviados a la derecha */
+}
+ 
+.chat-footer {
+    display: flex;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.chat-footer input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-right: 1rem;
+}
+ 
+.chat-footer input:focus {
+    outline: none;
+    border: 2px solid #3a4b6d; /* Indica el estado de enfoque en el input */
+}
+ 
+.chat-footer button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #3a4b6d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.chat-footer button:hover {
+    background-color: #2e3951;
+}
+ 
+@media (max-width: 768px) {
+    .messages {
+        padding: 2rem; /* Reduce el padding para pantallas pequeñas */
+    }
+}
+/* Estilos para mensajes enviados (a la derecha) */
+.message.sent {
+    justify-content: flex-end;
+}
+ 
+.message.sent img {
+    margin-right: 0;
+    margin-left: 0.5rem; /* Coloca la imagen a la izquierda del mensaje */
+}
+ 
+.message.sent p {
+    background-color: #d0f0c0;
+    text-align: right;
+}

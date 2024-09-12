@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/HomePage/Img/LogoInnVateBg.png">
+    <title>RegistroPrueba</title>
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <img src="/img/LogoSolito.png" alt="">
+                <h2>InnVate</h2>
+                <p>Bienvenido a InnVate, crea una cuenta para empezar</p>
+                <input type="button" value="O Inicia Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crea tu Cuenta Ahora</h2>
+                <div class="icons">
+                    <i class='bx bxl-microsoft'></i>
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>Utiliza un email para registrarte</p>
+                <!-- Formulario de registro -->
+                <form id="registerForm" class="form">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="nombre" name="Nombre" placeholder="Nombre Completo" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" id="correo" name="Correo" placeholder="Correo Electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="contraseña" name="Contraseña" placeholder="Contraseña" required>
+                    </label>
+                    <button type="submit" onclick="location.href='InnVate/SuccessPage/SuccessPage.html';">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <img src="/img/LogoSolito.png" alt="">
+                <h2>InnVate</h2>
+                <p>Bienvenido a InnVate, inicia sesión para empezar</p>
+                <input type="button" value="O Regístrate" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <p>Inicia sesión con una cuenta</p>
+                <div class="icons">
+                    <i class='bx bxl-microsoft'></i>
+                    <i class='bx bxl-google'></i>
+                </div>
+                <form id="loginForm" class="form">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" id="loginCorreo" name="Correo" placeholder="Correo Electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="loginContraseña" name="Contraseña" placeholder="Contraseña" required>
+                    </label>
+                    <button type="submit" onclick="location.href='/RolesPage/Roles.html';">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

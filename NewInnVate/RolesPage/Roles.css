@@ -1,0 +1,52 @@
+body {
+  background-image: url(/InnVateLogin/img/Fondo.jpg); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda el área visible */
+  background-position: center; /* Centra la imagen en la página */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  backdrop-filter: blur(8px); /* Aplicar el desenfoque */
+}
+
+.container {
+  background-color: rgba(240, 240, 240, 0.9); /* Fondo ligeramente transparente para el contenedor */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño según tu logo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, rgb(75, 255, 59), #4985ff); /* Gradiente verde a azul */
+  color: white; /* Asegura que el texto sea blanco sobre el gradiente */
+  transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+}
